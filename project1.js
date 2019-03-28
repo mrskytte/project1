@@ -9,18 +9,26 @@ function openMenu(){
         line2.classList.remove("middle")
         line3.classList.add("bottomback")
         line3.classList.remove("bottom")
+        BG.classList.add("BGanimationback")
+        BG.classList.remove("BGanimation")
+        menuCon.classList.add("menu-contentback")
+        menuCon.classList.remove("menu-content")
 } else{ line1.classList.add("top")
        line1.classList.remove("topback")
        line2.classList.add("middle")
        line2.classList.remove("middleback")
        line3.classList.add("bottom")
        line3.classList.remove("bottomback")
+       BG.classList.add("BGanimation")
+       BG.classList.remove("BGanimationback")
+       menuCon.classList.add("menu-content")
+    menuCon.classList.remove("menu-contentback")
 }
 }
 
 
-
-
+const menuCon =document.querySelector("#menu-content")
+const BG =document.querySelector("#BG")
 const line1 =document.querySelector("#line1")
 const line2 =document.querySelector("#line2")
 const line3 =document.querySelector("#line3")
